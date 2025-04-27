@@ -2,8 +2,8 @@ import socket
 import hashlib
 import hmac
 
-USERNAME = "johndoe"
-PASSWORD = "secr3t"
+USERNAME = "USERNAME"
+PASSWORD = "PASSWORD"
 
 # Function to compute HMAC with password and challenge
 def compute_hmac(password, challenge):
