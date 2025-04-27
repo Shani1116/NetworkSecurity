@@ -26,7 +26,7 @@ def start_server():
         conn.sendall(b"Request Password")
         password = conn.recv(1024).decode()
 
-        if username == "johndoe" and password == "random":
+        if username == "USERNAME" and password == "PASSWORD":
             # Step 1: Send a challenge to the client
             challenge = "public_challenge" 
             conn.sendall(challenge.encode())
