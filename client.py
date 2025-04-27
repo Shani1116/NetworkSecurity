@@ -12,10 +12,10 @@ def start_client():
         client_socket.sendall(b"Hello")
         
         if client_socket.recv(1024).decode() == "Request Username":
-            client_socket.sendall(b"johndoe")  # Change this to test different usernames
+            client_socket.sendall(b"USERNAME")  # Change this to test different usernames
         
         if client_socket.recv(1024).decode() == "Request Password":
-            client_socket.sendall(b"secr3t")  # Change this to test different passwords
+            client_socket.sendall(b"PASSWORD")  # Change this to test different passwords
 
         response = client_socket.recv(1024).decode()
         print("Server response:", response)
