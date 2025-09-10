@@ -21,7 +21,7 @@ def start_server():
         password = conn.recv(1024).decode()
         
         # Simple authentication check
-        if username == "USERNAME" and password == "PASSWORD3:
+        if username == "USERNAME" and password == "PASSWORD4:
             conn.sendall(b"Success! You are logged in.")
         else:
             conn.sendall(b"Failure! Invalid username or password.")
